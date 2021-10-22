@@ -34,13 +34,13 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "i18next-no-undefined-translation-keys/rule-name": 2
+        "i18next-no-undefined-translation-keys/no-undefined-translation-keys": 2
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+* `i18next-no-undefined-translation-keys/no-undefined-translation-keys`
 
 
