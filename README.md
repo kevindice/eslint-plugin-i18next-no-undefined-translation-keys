@@ -36,12 +36,12 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "i18next-no-undefined-translation-keys/translation-key-string-literal": 'error',
+        "i18next-no-undefined-translation-keys/translation-key-string-literal": "error",
         "i18next-no-undefined-translation-keys/no-undefined-translation-keys": [
-            'error',
+            "error",
             {
-                'referenceTranslationFiles': ['../lang/en.json', '../lang/units-of-measure.en.json'],
-                'skipNamespacedKeys': true, // support coming soon
+                "referenceTranslationFiles": ["../lang/en.json", "../lang/units-of-measure.en.json"],
+                "skipNamespacedKeys": true, // support coming soon
             }
         ],
     }
