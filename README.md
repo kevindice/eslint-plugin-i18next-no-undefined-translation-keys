@@ -41,9 +41,9 @@ Then configure the rules you want to use under the rules section.
             "error",
             {
                 "referenceTranslationFiles": ["../lang/en.json", "../lang/units-of-measure.en.json"],
-                "skipNamespacedKeys": true, // support coming soon
+                "skipNamespacedKeys": true
             }
-        ],
+        ]
     }
 }
 ```

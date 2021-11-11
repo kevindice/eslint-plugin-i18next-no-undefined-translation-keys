@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-i18next-no-undefined-translation-keys",
-  "version": "2.0.4",
+  "version": "2.0.6",
   "description": "Detects translation keys in use which are missing from translation files",
   "keywords": [
     "eslint",
