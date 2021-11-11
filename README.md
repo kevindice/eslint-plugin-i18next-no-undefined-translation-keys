@@ -1,6 +1,8 @@
 # eslint-plugin-i18next-no-undefined-translation-keys
 
-Detects translation keys in use which are missing from translation files
+Provides two rules:
+- `translation-key-string-literal` - Asserts that translation keys should be string literals only
+- `no-undefined-translation-keys` - Detects translation keys in use which are missing from translation files
 
 ## Installation
 
@@ -34,13 +36,21 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "i18next-no-undefined-translation-keys/no-undefined-translation-keys": 2
+        "i18next-no-undefined-translation-keys/translation-key-string-literal": 'error',
+        "i18next-no-undefined-translation-keys/no-undefined-translation-keys": [
+            'error',
+            {
+                'referenceTranslationFiles': ['../lang/en.json', '../lang/units-of-measure.en.json'],
+                'skipNamespacedKeys': true, // support coming soon
+            }
+        ],
     }
 }
 ```
 
+Note: The `no-undefined-translation-keys` rule will ignore any non-string-literal calls to `t()`.
+
 ## Supported Rules
 
+* `i18next-no-undefined-translation-keys/translation-key-string-literal`
 * `i18next-no-undefined-translation-keys/no-undefined-translation-keys`
-
-
