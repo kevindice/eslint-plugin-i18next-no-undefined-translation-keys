@@ -40,11 +40,21 @@ Then configure the rules you want to use under the rules section.
         "i18next-no-undefined-translation-keys/no-undefined-translation-keys": [
             "error",
             {
-                "referenceTranslationFiles": ["../lang/en.json", "../lang/units-of-measure.en.json"],
-                "skipNamespacedKeys": true
+                "namespaceTranslationMappingFile": "namespaceMapping.json",
+                "defaultNamespace": "default"
             }
         ]
     }
+}
+```
+
+And your `namespaceMapping.json` file should map your namespaces to translation file paths like so:
+
+```json
+{
+  "shared": "packages/shared/lang/en.json",
+  "unitsOfMeasure": "packages/shared/lang/uom-en.json",
+  "user": "packages/user/lang/en.json"
 }
 ```
 
