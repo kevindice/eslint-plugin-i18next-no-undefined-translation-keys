@@ -8,6 +8,10 @@
     "eslint-plugin"
   ],
   "author": "Kevin Dice",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevindice/eslint-plugin-i18next-no-undefined-keys.git"
+  }
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
