@@ -5,7 +5,8 @@
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "i18next"
   ],
   "author": "Kevin Dice",
   "repository": {
