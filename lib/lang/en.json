@@ -2,5 +2,9 @@
   "pizza": "pizza",
   "records": {
     "contracts": "Contracts"
+  },
+  "distance": {
+    "milesAway_one": "x",
+    "milesAway_other": "y"
   }
 }

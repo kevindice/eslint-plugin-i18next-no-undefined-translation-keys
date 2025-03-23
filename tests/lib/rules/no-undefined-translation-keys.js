@@ -25,6 +25,9 @@ ruleTester.run("no-undefined-translation-keys", rule, {
     {
       code: "t('records.contracts')"
     }
+    {
+      code: "t('distance.milesAway')"
+    },
   ],
 
   invalid: [
